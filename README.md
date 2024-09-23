@@ -87,7 +87,7 @@ settings:
 
 点击Launch Stack以创建Cloudformation 堆栈
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/35a8c96c-fea9-4dde-b6a3-d9d9079f17ad/cfb85414-23da-4aea-bedc-667090eb24e5/image.png)
+[![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)]
 
 依次填写用于保存Bedrock SDXL产生的图片的私有S3 Bucket、用于分发图片的Cloudfronnt 分配、Slack App签名密钥、Slack App OAuth Token，勾选**acknowledge，**然后**Create stack。**
 
