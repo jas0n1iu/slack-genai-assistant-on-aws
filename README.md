@@ -12,12 +12,12 @@ Amazon Bedrock 是一项完全托管的基础模型（FM）服务，通过单个
 
 在这篇博客中，我们将介绍如何在 AWS Lambda 中部署Slack 网关服务，用于接收 Slack 消息并使用 Amazon Bedrock 及其托管的Stability AI SDXL 基础模型生成相应的图像。我们利用了多个 Amazon云服务来构建一个健壮的解决方案：Secrets Manager 用于安全地存储密钥，DynamoDB 用于防止重复消息处理，S3 Bucket和 CloudFront 用于存储和分发生成的图像。通过将所有这些服务与 AWS Lambda 结合使用，我们可以构建一个无服务器的、可扩展的应用程序，用于处理 Slack 消息并生成图像。
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/35a8c96c-fea9-4dde-b6a3-d9d9079f17ad/a7b68cc2-adb1-450d-bed1-470e93a1de3d/image.png)
+![Architecture Overview](https://github.com/jas0n1iu/slack-genai-assistant-on-aws/blob/main/images/Architecture.png)
 
 ## 先决条件
 
 - 可用的亚马逊云科技账户
-- Amazon Bedrock Stable AI SDXL基础模型服务已启用
+- Amazon Bedrock Stable AI SDXL基础模型服务已启
 - 已创建 私有的S3 Bucket用于存储生成的图像
 - 通过CloudFront 分发私有S3 Bucket中的图像，实现静态内容加速，同时也可以配置CloudFront实现API Gateway动态加速
 
